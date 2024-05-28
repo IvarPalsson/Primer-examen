@@ -1,0 +1,47 @@
+/* Archivo: styles.css */
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 20%;
+    font-family: Arial, sans-serif;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.products {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.products svg{
+    fill: hsl(0, 0%, 0%);
+    height: 2rem;
+    width: 2rem;
+}
+
+.product-info{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.product-title h2{
+    font-size: 1rem;
+}
+
+.product-like{
+    display: flex;
+    justify-content: flex-end;
+}
